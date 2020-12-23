@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="李岩&#39;s Blog">
 <meta property="og:description" content="lisp中的lambda表达式，显然和python中的很相似。参照《实用common lisp编程》：12345678;按照 min max, 步长step为参数的fn计算的长度输出 *(defun plot (fn min max step)  (loop for i from min to max by step do        (loop repeat (funcall fn i) do">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-12-09T13:59:23.580Z">
+<meta property="og:updated_time" content="2020-12-23T11:42:05.691Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lisp-lambda函数">
 <meta name="twitter:description" content="lisp中的lambda表达式，显然和python中的很相似。参照《实用common lisp编程》：12345678;按照 min max, 步长step为参数的fn计算的长度输出 *(defun plot (fn min max step)  (loop for i from min to max by step do        (loop repeat (funcall fn i) do">
@@ -343,6 +343,7 @@
 
       
         <p>lisp中的lambda表达式，显然和python中的很相似。<br>参照《实用common lisp编程》：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">;按照 min max, 步长step为参数的fn计算的长度输出 *</span><br><span class="line">(defun plot (fn min max step)</span><br><span class="line">  (loop for i from min to max by step do</span><br><span class="line">        (loop repeat (funcall fn i) do (format t &quot;*&quot;))</span><br><span class="line">        (format t &quot;~%&quot;)))</span><br><span class="line"></span><br><span class="line">(plot #&apos;exp 0 4 1/2);</span><br><span class="line">(plot #&apos;(lambda (x) (* 2 x)) 0 10 1);</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <p>输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">*</span><br><span class="line">**</span><br><span class="line">***</span><br><span class="line">*****</span><br><span class="line">********</span><br><span class="line">*************</span><br><span class="line">*********************</span><br><span class="line">**********************************</span><br><span class="line">*******************************************************</span><br><span class="line"></span><br><span class="line">**</span><br><span class="line">****</span><br><span class="line">******</span><br><span class="line">********</span><br><span class="line">**********</span><br><span class="line">************</span><br><span class="line">**************</span><br><span class="line">****************</span><br><span class="line">******************</span><br><span class="line">********************</span><br></pre></td></tr></table></figure></p>
 <p><code>#’</code>为lisp语言的语法糖，展开表示为<code>function</code>。后者将会把一个函数生成为一个函数对象，后者可以通过<code>funcall</code>调用。<br>interesting。</p>
 
@@ -461,7 +462,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -483,7 +484,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

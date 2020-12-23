@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="lisp,">
+  <meta name="keywords" content="emacs,vim,elscreen,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="lisp声明、使用变量的一种方法，是使用let语句。形如：123456789101112;(let ((variable declare1) (variable declare2) (...));  (varaible used here));(defun foo(x)  (format t &amp;quot;Parameter: ~a~%&amp;quot; x)  (let ((x 2))    (form">
-<meta name="keywords" content="lisp">
+<meta name="description" content="使用emacs过程中，配合evil使用，按照tab的划分，将编辑、浏览、leetcode等任务划分到不同的tab便于切换及管理。美中不足的是，模拟标签的elscreen默认将其他标签的颜色设置成:background blue  :foreground black的配色，每次切换任务时，都需要重复确认需要跳转到哪个标签，就比较麻烦了。查找了一下重置face-attribute的方法，备注下。">
+<meta name="keywords" content="emacs,vim,elscreen">
 <meta property="og:type" content="article">
-<meta property="og:title" content="lisp-let变量声明">
-<meta property="og:url" content="http://yoursite.com/2019/05/30/lisp-let变量声明/index.html">
+<meta property="og:title" content="elscreen标签背景颜色">
+<meta property="og:url" content="http://yoursite.com/2020/12/23/elscreen标签背景颜色/index.html">
 <meta property="og:site_name" content="李岩&#39;s Blog">
-<meta property="og:description" content="lisp声明、使用变量的一种方法，是使用let语句。形如：123456789101112;(let ((variable declare1) (variable declare2) (...));  (varaible used here));(defun foo(x)  (format t &amp;quot;Parameter: ~a~%&amp;quot; x)  (let ((x 2))    (form">
+<meta property="og:description" content="使用emacs过程中，配合evil使用，按照tab的划分，将编辑、浏览、leetcode等任务划分到不同的tab便于切换及管理。美中不足的是，模拟标签的elscreen默认将其他标签的颜色设置成:background blue  :foreground black的配色，每次切换任务时，都需要重复确认需要跳转到哪个标签，就比较麻烦了。查找了一下重置face-attribute的方法，备注下。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-12-23T11:41:50.113Z">
+<meta property="og:updated_time" content="2020-12-23T11:38:56.296Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lisp-let变量声明">
-<meta name="twitter:description" content="lisp声明、使用变量的一种方法，是使用let语句。形如：123456789101112;(let ((variable declare1) (variable declare2) (...));  (varaible used here));(defun foo(x)  (format t &amp;quot;Parameter: ~a~%&amp;quot; x)  (let ((x 2))    (form">
+<meta name="twitter:title" content="elscreen标签背景颜色">
+<meta name="twitter:description" content="使用emacs过程中，配合evil使用，按照tab的划分，将编辑、浏览、leetcode等任务划分到不同的tab便于切换及管理。美中不足的是，模拟标签的elscreen默认将其他标签的颜色设置成:background blue  :foreground black的配色，每次切换任务时，都需要重复确认需要跳转到哪个标签，就比较麻烦了。查找了一下重置face-attribute的方法，备注下。">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/30/lisp-let变量声明/">
+  <link rel="canonical" href="http://yoursite.com/2020/12/23/elscreen标签背景颜色/">
 
 
 
 
 
-  <title>lisp-let变量声明 | 李岩's Blog</title>
+  <title>elscreen标签背景颜色 | 李岩's Blog</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/30/lisp-let变量声明/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/12/23/elscreen标签背景颜色/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="李岩">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">lisp-let变量声明</h1>
+          <h1 class="post-title" itemprop="name headline">elscreen标签背景颜色</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-30T22:51:00+08:00">
-                2019-05-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-12-23T19:23:00+08:00">
+                2020-12-23
               </time>
             
 
@@ -342,12 +342,13 @@
       
 
       
-        <p>lisp声明、使用变量的一种方法，是使用<code>let</code>语句。<br>形如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">;(let ((variable declare1) (variable declare2) (...))</span><br><span class="line">;  (varaible used here));</span><br><span class="line">(defun foo(x)</span><br><span class="line">  (format t &quot;Parameter: ~a~%&quot; x)</span><br><span class="line">  (let ((x 2))</span><br><span class="line">    (format t &quot;Outer LET: ~a~%&quot; x)</span><br><span class="line">    (let ((x 3))</span><br><span class="line">      (format t &quot;Inner LET: ~a~%&quot; x))</span><br><span class="line">    (format t &quot;Outer LET: ~a~%&quot; x))</span><br><span class="line">  (format t &quot;Parameter: ~a~%&quot; x));</span><br><span class="line"></span><br><span class="line">(foo 10);</span><br></pre></td></tr></table></figure></p>
+        <blockquote>
+<p>使用<code>emacs</code>过程中，配合<code>evil</code>使用，按照<code>tab</code>的划分，将编辑、浏览、<code>leetcode</code>等任务划分到不同的<code>tab</code>便于切换及管理。美中不足的是，模拟标签的<code>elscreen</code>默认将其他标签的颜色设置成<code>:background blue  :foreground black</code>的配色，每次切换任务时，都需要重复确认需要跳转到哪个标签，就比较麻烦了。查找了一下重置<code>face-attribute</code>的方法，备注下。</p>
+</blockquote>
+<p>在初始文件的最后添加：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">;; 选中标签设置为绿底黑字，其他标签为黄底黑字</span><br><span class="line">(set-face-attribute &apos;elscreen-tab-other-screen-face nil</span><br><span class="line">                    :background &quot;yellow&quot; :foreground &quot;black&quot;)</span><br><span class="line">(set-face-attribute &apos;elscreen-tab-current-screen-face nil</span><br><span class="line">                    :background &quot;green&quot; :foreground &quot;black&quot;)</span><br></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<p>声明的作用域，和C语言很相似，存在覆盖的特点。输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Parameter: 10</span><br><span class="line">Outer LET: 2</span><br><span class="line">Inner LET: 3</span><br><span class="line">Outer LET: 2</span><br><span class="line">Parameter: 10</span><br></pre></td></tr></table></figure></p>
-<p>使用<code>let</code>声明时，变量声明域内，无法使用前一个在本声明域内声明的变量：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(defun year-day(y)</span><br><span class="line">  (let ((m (* y 12)) (d (* m 30)))</span><br><span class="line">    (format t &quot;Year:~d~%Month:~d~%Day:~d~%&quot; y m d)));</span><br><span class="line">(year-day 1);</span><br><span class="line"></span><br><span class="line">*** - LET: variable M has no value</span><br></pre></td></tr></table></figure></p>
-<p>使用<code>let*</code>可以进行如此操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(defun year-day(y)</span><br><span class="line">  (let* ((m (* y 12)) (d (* m 30)))</span><br><span class="line">    (format t &quot;Year:~d~%Month:~d~%Day:~d~%&quot; y m d)));</span><br><span class="line">(year-day 1);</span><br><span class="line">Year:1</span><br><span class="line">Month:12</span><br><span class="line">Day:360</span><br></pre></td></tr></table></figure></p>
-<p>just like this.</p>
+<p>备注下<a href="https://github.com/knu/elscreen" target="_blank" rel="noopener"><code>elscreen</code></a>原始代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">(defface elscreen-tab-current-screen-face</span><br><span class="line">  &apos;((((class color))</span><br><span class="line">     (:background &quot;white&quot; :foreground &quot;black&quot;))</span><br><span class="line">    (t (:underline t)))</span><br><span class="line">  &quot;Face for current screen tab.&quot;</span><br><span class="line">  :group &apos;elscreen)</span><br><span class="line"></span><br><span class="line">(defface elscreen-tab-other-screen-face</span><br><span class="line">  &apos;((((type x w32 mac ns) (class color))</span><br><span class="line">     :background &quot;Gray85&quot; :foreground &quot;Gray50&quot;)</span><br><span class="line">    (((class color))</span><br><span class="line">     (:background &quot;blue&quot; :foreground &quot;black&quot; :underline t)))</span><br><span class="line">  &quot;Face for tabs other than current screen one.&quot;</span><br><span class="line">  :group &apos;elscreen)</span><br></pre></td></tr></table></figure></p>
+<p><a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Defining-Faces.html" target="_blank" rel="noopener">emacs defface</a></p>
 
       
     </div>
@@ -365,7 +366,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/lisp/" rel="tag"># lisp</a>
+            <a href="/tags/emacs/" rel="tag"># emacs</a>
+          
+            <a href="/tags/vim/" rel="tag"># vim</a>
+          
+            <a href="/tags/elscreen/" rel="tag"># elscreen</a>
           
         </div>
       
@@ -378,8 +383,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/29/lisp-lambda函数/" rel="next" title="lisp-lambda函数">
-                <i class="fa fa-chevron-left"></i> lisp-lambda函数
+              <a href="/2020/12/10/Mac使用备注/" rel="next" title="Mac使用备注">
+                <i class="fa fa-chevron-left"></i> Mac使用备注
               </a>
             
           </div>
@@ -387,10 +392,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/06/03/lisp-do循环/" rel="prev" title="lisp-do循环">
-                lisp-do循环 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

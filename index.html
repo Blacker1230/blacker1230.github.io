@@ -252,6 +252,155 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/12/23/elscreen标签背景颜色/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李岩">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/walk.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李岩's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/12/23/elscreen标签背景颜色/" itemprop="url">elscreen标签背景颜色</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-12-23T19:23:00+08:00">
+                2020-12-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/code/" itemprop="url" rel="index">
+                    <span itemprop="name">code</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>使用<code>emacs</code>过程中，配合<code>evil</code>使用，按照<code>tab</code>的划分，将编辑、浏览、<code>leetcode</code>等任务划分到不同的<code>tab</code>便于切换及管理。美中不足的是，模拟标签的<code>elscreen</code>默认将其他标签的颜色设置成<code>:background blue  :foreground black</code>的配色，每次切换任务时，都需要重复确认需要跳转到哪个标签，就比较麻烦了。查找了一下重置<code>face-attribute</code>的方法，备注下。</p>
+</blockquote>
+<p>在初始文件的最后添加：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">;; 选中标签设置为绿底黑字，其他标签为黄底黑字</span><br><span class="line">(set-face-attribute &apos;elscreen-tab-other-screen-face nil</span><br><span class="line">                    :background &quot;yellow&quot; :foreground &quot;black&quot;)</span><br><span class="line">(set-face-attribute &apos;elscreen-tab-current-screen-face nil</span><br><span class="line">                    :background &quot;green&quot; :foreground &quot;black&quot;)</span><br></pre></td></tr></table></figure></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/12/23/elscreen标签背景颜色/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/12/10/Mac使用备注/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -283,7 +432,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-12-10T19:40:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-12-10T19:40:00+08:00">
                 2020-12-10
               </time>
             
@@ -293,6 +442,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/code/" itemprop="url" rel="index">
+                    <span itemprop="name">code</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -322,29 +493,19 @@
 
       
         
-          
-            <blockquote>
+          <blockquote>
 <p>最近开始使用Mac了。在使用过程中，发现了一些<code>Mac OS</code>和<code>Centos</code>体验上不同的地方。在这里做一下备注。</p>
 </blockquote>
 <h3 id="部分Linux指令缺失"><a href="#部分Linux指令缺失" class="headerlink" title="部分Linux指令缺失"></a>部分Linux指令缺失</h3><p><code>Mac OS</code>并没有实现所有的<code>Linux</code>下的指令，如<code>realpath</code>这里就需要单独安装一些扩展包了：</p>
 <blockquote>
-<p>brew install coreutils</p>
-</blockquote>
-<h3 id="终端Basic颜色不友好"><a href="#终端Basic颜色不友好" class="headerlink" title="终端Basic颜色不友好"></a>终端Basic颜色不友好</h3><p>可以单独下载一些配色方案。从尽量使用原生配色的角度来说，只需要在<code>.bashrc</code>下面作如下配置即可：</p>
-<blockquote>
-<p># for color<br>export CLICOLOR=1<br># grep<br>alias grep=’grep –color=always’</p>
-</blockquote>
-<p>此外，配合<code>.vimrc</code>中配色变更食用更佳：</p>
-<blockquote>
-<p>“ 设置搜索高亮<br>set hlsearch<br>“ 设置语法高亮<br>syntax on </p>
-</blockquote>
-<h3 id="启动shell配置不同"><a href="#启动shell配置不同" class="headerlink" title="启动shell配置不同"></a>启动shell配置不同</h3><p><code>Mac OS</code>默认使用<code>zsh</code>作为登陆<code>shell</code>。所以设置<code>.bashrc</code>作为启动配置时，需要在<code>~/.zshrc</code>中进行配置：</p>
-<blockquote>
-<p>[ -f ~/.bashrc ] &amp;&amp; source ~/.bashrc</p>
-</blockquote>
-<p>后面碰到再补充吧。</p>
-
-          
+<p>brew install coreutils<br></p></blockquote>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/12/10/Mac使用备注/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -589,14 +750,15 @@
 
       
         
-          
-            <p>目录内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text  text.bak</span><br></pre></td></tr></table></figure></p>
-<p>希望从中找到<code>text.bak</code>。使用<code>find</code>实现。<br>错误操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;find -name *.bak* .</span><br><span class="line">find: paths must precede expression: .</span><br><span class="line">Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path...] [expression]</span><br></pre></td></tr></table></figure></p>
-<p><code>-name</code>会作为<code>EXPRESSIONS</code>存在。<code>find</code>要求的参数位置为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find [-H] [-L] [-P] [-D debugopts] [-Olevel] [path...] [expression]</span><br></pre></td></tr></table></figure></p>
-<p>所以，正确格式为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">find . -name *.bak</span><br><span class="line">./text.bak</span><br></pre></td></tr></table></figure></p>
-<p>关于正则中<code>.</code>会作为通配符，如需匹配<code>text.bak</code>需要对<code>.</code>进行转义的情况，也需要关注下。本例中就不涉及了。</p>
-
-          
+          <p>目录内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text  text.bak</span><br></pre></td></tr></table></figure></p>
+<p>希望从中找到<code>text.bak</code>。使用<code>find</code>实现。<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/11/12/find匹配文件名/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -713,16 +875,18 @@
 
       
         
-          
-            <h2 id="sed功能介绍"><a href="#sed功能介绍" class="headerlink" title="sed功能介绍"></a>sed功能介绍</h2><p>先看下官方的介绍</p>
+          <h2 id="sed功能介绍"><a href="#sed功能介绍" class="headerlink" title="sed功能介绍"></a>sed功能介绍</h2><p>先看下官方的介绍</p>
 <blockquote>
 <p>Sed  is a stream editor. A stream editor is used to perform basic text transformations on an input stream (a file or input from a pipeline).<br>While in some ways similar to an editor which permits scripted edits (such as ed), sed works by making only one pass over the  input(s),  and<br>is consequently more efficient.  But it is sed’s ability to filter text in a pipeline which particularly distinguishes it from other types of<br>editors.</p>
 </blockquote>
-<p>大概的意思，是面向流的文本编辑工具。一般用来对文件中的文本进行替换等操作。<br>以下备注一些常用的操作方式了。  </p>
-<h2 id="使用介绍"><a href="#使用介绍" class="headerlink" title="使用介绍"></a>使用介绍</h2><p>我们以上段文字为例，使用<code>sed</code>进行文本的操作。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">sed -i &quot;s#Sed#SED#g&quot; text</span><br><span class="line">使用 -i 才可以直接修改 text 里面的内容，否则无法修改（但是会将修改后的内容输出到标准输出）</span><br><span class="line">这里使用#作为sed的限位符而非/，是因为一般文本中，/符号出现的频率要较#高。直接使用#就不需要频繁转义了。</span><br><span class="line"></span><br><span class="line">sed -i &apos;2,2 s#in#in_#g&apos; text</span><br><span class="line">将 行号 [2,2] 中的 in 全部替换为 in_，注意，input也会被替换为in_put</span><br><span class="line"></span><br><span class="line">sed -i &apos;/While.*/, /.*editors/ s#in#in_#g&apos; text</span><br><span class="line">将 While.* .*editors 之间的 in 全部替换为 in_</span><br><span class="line"></span><br><span class="line">sed -i &apos;2,+1 s#in#in_#g&apos; text</span><br><span class="line">将 [2, 2+1=3] 行内的 in 全部替换为 in_</span><br></pre></td></tr></table></figure></p>
-<p>基本上常用的一些 <code>sed</code>替换方式就是这些了。<code>man</code>文档中还有一些基于倍数的替换范围决定方式，这里就不说明了。使用的时候，还是尽量使用通俗易懂的方式。</p>
-
-          
+<p>大概的意思，是面向流的文本编辑工具。一般用来对文件中的文本进行替换等操作。<br>以下备注一些常用的操作方式了。<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/11/12/sed使用备注/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -861,20 +1025,14 @@
 
       
         
-          
-            <p>最近研究了一下<a href="http://pluma-framework.sourceforge.net/" target="_blank" rel="noopener">pluma</a>的使用。发现官网上的简单示例对于刚入门的人来说还是麻烦了些（而且还有语法错误）。<br>下面重新整理了一个例子，作为备注。  </p>
-<p>其中，<code>device</code>为一个虚基类，作为接口类存在。<code>keyboard</code>及<code>screen</code>作为实现了device的子类存在，实现具体的操作。在pluma上注册后，在<code>main</code>中调用接口，实现<code>keyboard</code>及<code>screen</code>的调用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// device.hpp</span><br><span class="line">#ifndef _DEVICE_HPP_</span><br><span class="line">#define _DEVICE_HPP_</span><br><span class="line">#include &quot;Pluma/Pluma.hpp&quot;</span><br><span class="line"></span><br><span class="line">class Device&#123;</span><br><span class="line">public:</span><br><span class="line">    virtual std::string getDescription() const=0;</span><br><span class="line">&#125;;</span><br><span class="line">// create DevicedProvider class</span><br><span class="line">PLUMA_PROVIDER_HEADER(Device);</span><br><span class="line"></span><br><span class="line">#endif</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// device.cpp</span><br><span class="line">#include &quot;device.hpp&quot;</span><br><span class="line">PLUMA_PROVIDER_SOURCE(Device, 6, 3);</span><br></pre></td></tr></table></figure>
-<p>如上所示，是<code>device</code>的定义。其中<code>PLUMA_PROVIDER_HEADER</code>和<code>PLUMA_PROVIDER_SOURCE</code><code>pluma</code>提供的宏。功能暂且不论。我们继续往下看。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// screen.hpp</span><br><span class="line">#include &quot;Pluma/Pluma.hpp&quot;</span><br><span class="line">#include &quot;device.hpp&quot;</span><br><span class="line"></span><br><span class="line">class Screen: public Device&#123;</span><br><span class="line">public:</span><br><span class="line">    std:: string getDescription() const&#123;</span><br><span class="line">        return &quot;screen&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">PLUMA_INHERIT_PROVIDER(Screen, Device);</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// keyboard.hpp</span><br><span class="line">#include &quot;Pluma/Pluma.hpp&quot;</span><br><span class="line">#include &quot;device.hpp&quot;</span><br><span class="line"></span><br><span class="line">class Keyboard: public Device&#123;</span><br><span class="line">public:</span><br><span class="line">    std:: string getDescription() const&#123;</span><br><span class="line">        return &quot;keyboard&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">PLUMA_INHERIT_PROVIDER(Keyboard, Device);</span><br></pre></td></tr></table></figure>
-<p>上面实现了<code>screen</code>及<code>keyboard</code>的逻辑。实现了之后，需要进行注册：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// connect.cpp</span><br><span class="line"> #include &lt;Pluma/Connector.hpp&gt;</span><br><span class="line"> #include &quot;keyboard.hpp&quot;</span><br><span class="line"> #include &quot;screen.hpp&quot;</span><br><span class="line"></span><br><span class="line"> PLUMA_CONNECTOR</span><br><span class="line"> bool connect(pluma::Host&amp; host)&#123;</span><br><span class="line">     // add a keyboard provider to host</span><br><span class="line">     host.add( new KeyboardProvider() );</span><br><span class="line">     host.add( new ScreenProvider() );</span><br><span class="line">     return true;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
-<p>这里在<code>connect</code>中进行了两个子类的注册。之所以使用<code>connect</code>是因为后面的pluma使用的时候，官网给出的示例代码中，会从<code>connect</code>入口开始调用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">// main.cpp</span><br><span class="line">#include &quot;Pluma/Pluma.hpp&quot;</span><br><span class="line"></span><br><span class="line">#include &quot;device.hpp&quot;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;vector&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    pluma:: Pluma plugins;</span><br><span class="line">    plugins.acceptProviderType&lt;DeviceProvider&gt;();</span><br><span class="line">    plugins.load(&quot;./plugin/connect.so&quot;);</span><br><span class="line">    //plugins.load(&quot;./plugin/keyboard.so&quot;);</span><br><span class="line"></span><br><span class="line">    std::vector&lt;DeviceProvider*&gt; providers;</span><br><span class="line">    plugins.getProviders(providers);</span><br><span class="line"></span><br><span class="line">    std::cout&lt;&lt;&quot;size for providers are:&quot; &lt;&lt; providers.size()&lt;&lt; std:: endl;</span><br><span class="line">    if (!providers.empty())&#123;</span><br><span class="line">        for (std::vector&lt;DeviceProvider*&gt;::iterator device=providers.begin();</span><br><span class="line">            device != providers.end(); ++ device)&#123;</span><br><span class="line">            Device* myDevice = (*device)-&gt;create();</span><br><span class="line">            std::cout &lt;&lt; myDevice-&gt;getDescription() &lt;&lt; std::endl;</span><br><span class="line">            delete myDevice;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>这里就是主要的调用逻辑了。官网中<code>myDevice</code>附近的拼写有主意，这是个坑了。<br>这里回顾下目录结构：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── connect.cpp</span><br><span class="line">├── device.hpp</span><br><span class="line">├── device.cpp</span><br><span class="line">├── keyboard.hpp</span><br><span class="line">├── main.cpp</span><br><span class="line">├── plugin                          # 用来存储插件结果的目录</span><br><span class="line">├── Pluma                           # 为了方便，这里将Pluma的include及src文件均拷贝到这里</span><br><span class="line">│   ├── Config.hpp</span><br><span class="line">│   ├── Connector.hpp</span><br><span class="line">│   ├── Dir.cpp</span><br><span class="line">│   ├── Dir.hpp</span><br><span class="line">│   ├── DLibrary.cpp</span><br><span class="line">│   ├── DLibrary.hpp</span><br><span class="line">│   ├── Host.cpp</span><br><span class="line">│   ├── Host.hpp</span><br><span class="line">│   ├── PluginManager.cpp</span><br><span class="line">│   ├── PluginManager.hpp</span><br><span class="line">│   ├── Pluma.hpp</span><br><span class="line">│   ├── Pluma.inl</span><br><span class="line">│   ├── Provider.cpp</span><br><span class="line">│   ├── Provider.hpp</span><br><span class="line">│   └── uce-dirent.h</span><br><span class="line">└── screen.hpp</span><br></pre></td></tr></table></figure></p>
-<p>看下编译过程：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 生成device.so</span><br><span class="line">g++ connect.cpp device.cpp Pluma/*.cpp -shared -fPIC -o plugin/connect.so -I./</span><br><span class="line"></span><br><span class="line"># 生成main</span><br><span class="line">g++ main.cpp device.hpp device.cpp Pluma/*.cpp -o main -I./ -ldl</span><br></pre></td></tr></table></figure></p>
-<p>执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">./main</span><br><span class="line">size for providers are:2</span><br><span class="line">keyboard</span><br><span class="line">screen</span><br></pre></td></tr></table></figure></p>
-<p>以上就是实践的内容了。</p>
-
-          
+          <p>最近研究了一下<a href="http://pluma-framework.sourceforge.net/" target="_blank" rel="noopener">pluma</a>的使用。发现官网上的简单示例对于刚入门的人来说还是麻烦了些（而且还有语法错误）。<br>下面重新整理了一个例子，作为备注。<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/10/29/c-插件管理-pluma/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1013,14 +1171,15 @@
 
       
         
-          
-            <p>&lt;一&gt; 这里记录一些python调试的方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># coding=UTF-8</span><br><span class="line">&apos;&apos;&apos; python debug method 1</span><br><span class="line">use print function to get output informatino</span><br><span class="line">&apos;&apos;&apos;</span><br><span class="line">DEBUG = True</span><br><span class="line"></span><br><span class="line">def _debug_(*args, **kwds):</span><br><span class="line">	&apos;&apos;&apos; depends on DEBUG value, print some function &apos;&apos;&apos;</span><br><span class="line">    global DEBUG</span><br><span class="line">    if DEBUG:</span><br><span class="line">    	print(args, kwds)</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">	_debug_(&quot;this is a test&quot;)</span><br></pre></td></tr></table></figure></p>
-<p>最常见的调试方法了。<code>print</code>可以依据需求调整为其他的方式（<code>logging</code>输出日志或者直接输出到文件中均可）。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 输出结果如下：</span><br><span class="line">((&apos;this is a test&apos;,), &#123;&#125;)</span><br></pre></td></tr></table></figure></p>
-<p>&lt;二&gt;然后就是更直接一些的调试方法了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># coding=UTF-8</span><br><span class="line">import pdb</span><br><span class="line">def test_function():</span><br><span class="line">	&apos;&apos;&apos; regard it as a test funcion &apos;&apos;&apos;</span><br><span class="line">    try:</span><br><span class="line">    	a = 1</span><br><span class="line">        b = 0</span><br><span class="line">    	c = a / b</span><br><span class="line">    except Exception, e:</span><br><span class="line">    	pdb.set_trace()</span><br><span class="line">    return</span><br><span class="line">    </span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">	test_function()</span><br></pre></td></tr></table></figure></p>
-<p>直接一点了，直接在代码中显式设置断点。这样，在异常发生时，就可以直接中断调试了。<br><code>python</code>中的<code>pdb</code>应该可以认为是一种阉割版的<code>gdb</code>了。仅对<code>list</code><code>print</code>及其他的<code>python</code>的内置函数有较好的支持。相互配合来看的话，也能发现很多问题。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 输出如下：</span><br><span class="line">&gt; test_debug.py(11)test_function()</span><br><span class="line">-&gt; return</span><br><span class="line">(Pdb) list</span><br><span class="line">  6             a = 1</span><br><span class="line">  7             b = 0</span><br><span class="line">  8             c = a / b</span><br><span class="line">  9         except Exception, e:</span><br><span class="line"> 10             pdb.set_trace()</span><br><span class="line"> 11  -&gt;     return</span><br><span class="line"> 12</span><br><span class="line"> 13     if __name__ == &quot;__main__&quot;:</span><br><span class="line"> 14         test_function()</span><br><span class="line">[EOF]</span><br><span class="line">(Pdb) print(e)</span><br><span class="line">integer division or modulo by zero</span><br><span class="line">(Pdb) print(a, b, c)</span><br><span class="line">*** NameError: name &apos;c&apos; is not defined</span><br><span class="line">(Pdb) print(a, b)</span><br><span class="line">(1, 0)</span><br><span class="line">(Pdb) quit()</span><br></pre></td></tr></table></figure></p>
-<p>唔，先这样吧。可以考虑收集一些<code>python</code>的内置解析包来配合调试了。</p>
-
-          
+          <p>&lt;一&gt; 这里记录一些python调试的方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># coding=UTF-8</span><br><span class="line">&apos;&apos;&apos; python debug method 1</span><br><span class="line">use print function to get output informatino</span><br><span class="line">&apos;&apos;&apos;</span><br><span class="line">DEBUG = True</span><br><span class="line"></span><br><span class="line">def _debug_(*args, **kwds):</span><br><span class="line">	&apos;&apos;&apos; depends on DEBUG value, print some function &apos;&apos;&apos;</span><br><span class="line">    global DEBUG</span><br><span class="line">    if DEBUG:</span><br><span class="line">    	print(args, kwds)</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">	_debug_(&quot;this is a test&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>最常见的调试方法了。<code>print</code>可以依据需求调整为其他的方式（<code>logging</code>输出日志或者直接输出到文件中均可）。<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/17/python调试方法（其一）/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1159,12 +1318,15 @@
 
       
         
-          
-            <p>考虑以下场景：<br>期望通过给定的变量名称<code>var_str</code>，打印出该名称对应的变量值<code>${var_str}</code>。使用指令<code>eval</code>可以很方便的实现：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var_str=&quot;1213&quot;;</span><br><span class="line">ned_param_name=&quot;var_str&quot;;</span><br><span class="line">eval echo &apos;$&apos;&quot;$&#123;ned_param_name&#125;&quot;;</span><br></pre></td></tr></table></figure></p>
-<p>输出结果为<code>1213</code>;<br><code>eval</code>命令解释如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">eval [arg ...]</span><br><span class="line">    The  args  are read and concatenated together into a single command. </span><br><span class="line">    This command is then read and executed by the shell, and its exit status is returned as</span><br><span class="line">the value of eval.  If there are no args, or only null arguments, eval returns 0.</span><br><span class="line">eval [参数 ...]</span><br><span class="line">    参数将会被读取并作为一个指令被读入。然后这个指令将会被shell读取并执行，执行结果</span><br><span class="line">将会作为eval的结果。如果没有参数传入，或者只有空参数，eval指令将会返回0。</span><br></pre></td></tr></table></figure></p>
-<p>对于上述的例子，<code>echo $var_str</code>将会被读入，并被shell重新执行。输出结果为<code>1213</code>。该结果即作为<code>eval</code>的输出结果。</p>
-
-          
+          <p>考虑以下场景：<br>期望通过给定的变量名称<code>var_str</code>，打印出该名称对应的变量值<code>${var_str}</code>。使用指令<code>eval</code>可以很方便的实现：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var_str=&quot;1213&quot;;</span><br><span class="line">ned_param_name=&quot;var_str&quot;;</span><br><span class="line">eval echo &apos;$&apos;&quot;$&#123;ned_param_name&#125;&quot;;</span><br></pre></td></tr></table></figure></p>
+<p>输出结果为<code>1213</code>;<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/06/04/shell-访问字符串同名变量/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1303,13 +1465,14 @@
 
       
         
-          
-            <p>lisp中，do循环形象如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(do (variable-definition*)</span><br><span class="line">    (end-test-form result-form*)</span><br><span class="line">    statement*);</span><br></pre></td></tr></table></figure></p>
-<p>其中，<code>(variable-definition*)</code>是一些行日<code>(var init next)</code>的赋值结构。在<code>do</code>开始时，<code>var</code>会被赋值为<code>init</code>。并且在一次循环结束后，<code>var</code>会被赋值为<code>next</code>所表示的内容。<br>形如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(do ((n 0 (+ 1 n))</span><br><span class="line">     (cur 0 next)</span><br><span class="line">     (next 1 (+ cur next)))</span><br><span class="line">    ((= 10 n) (format t &quot;|end ~d&quot; cur))</span><br><span class="line">  (format t &quot;~d|&quot; cur));</span><br></pre></td></tr></table></figure></p>
-<p>输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0|1|1|2|3|5|8|13|21|34||end 55</span><br></pre></td></tr></table></figure></p>
-<p>类似于python中的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cur = 0</span><br><span class="line">next = 1</span><br><span class="line">for i in range(10):</span><br><span class="line">    print(&quot;%d|&quot; % cur)</span><br><span class="line">    cur, next = next, cur + next</span><br><span class="line">print(&quot;|end %d&quot; % cur)</span><br></pre></td></tr></table></figure></p>
-
-          
+          <p>lisp中，do循环形象如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(do (variable-definition*)</span><br><span class="line">    (end-test-form result-form*)</span><br><span class="line">    statement*);</span><br></pre></td></tr></table></figure></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/06/03/lisp-do循环/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1448,158 +1611,14 @@
 
       
         
-          
-            <p>lisp声明、使用变量的一种方法，是使用<code>let</code>语句。<br>形如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">;(let ((variable declare1) (variable declare2) (...))</span><br><span class="line">;  (varaible used here));</span><br><span class="line">(defun foo(x)</span><br><span class="line">  (format t &quot;Parameter: ~a~%&quot; x)</span><br><span class="line">  (let ((x 2))</span><br><span class="line">    (format t &quot;Outer LET: ~a~%&quot; x)</span><br><span class="line">    (let ((x 3))</span><br><span class="line">      (format t &quot;Inner LET: ~a~%&quot; x))</span><br><span class="line">    (format t &quot;Outer LET: ~a~%&quot; x))</span><br><span class="line">  (format t &quot;Parameter: ~a~%&quot; x));</span><br><span class="line"></span><br><span class="line">(foo 10);</span><br></pre></td></tr></table></figure></p>
-<p>声明的作用域，和C语言很相似，存在覆盖的特点。输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Parameter: 10</span><br><span class="line">Outer LET: 2</span><br><span class="line">Inner LET: 3</span><br><span class="line">Outer LET: 2</span><br><span class="line">Parameter: 10</span><br></pre></td></tr></table></figure></p>
-<p>使用<code>let</code>声明时，变量声明域内，无法使用前一个在本声明域内声明的变量：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(defun year-day(y)</span><br><span class="line">  (let ((m (* y 12)) (d (* m 30)))</span><br><span class="line">    (format t &quot;Year:~d~%Month:~d~%Day:~d~%&quot; y m d)));</span><br><span class="line">(year-day 1);</span><br><span class="line"></span><br><span class="line">*** - LET: variable M has no value</span><br></pre></td></tr></table></figure></p>
-<p>使用<code>let*</code>可以进行如此操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(defun year-day(y)</span><br><span class="line">  (let* ((m (* y 12)) (d (* m 30)))</span><br><span class="line">    (format t &quot;Year:~d~%Month:~d~%Day:~d~%&quot; y m d)));</span><br><span class="line">(year-day 1);</span><br><span class="line">Year:1</span><br><span class="line">Month:12</span><br><span class="line">Day:360</span><br></pre></td></tr></table></figure></p>
-<p>just like this.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/29/lisp-lambda函数/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李岩">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/walk.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="李岩's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/29/lisp-lambda函数/" itemprop="url">lisp-lambda函数</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-29T23:28:00+08:00">
-                2019-05-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/code/" itemprop="url" rel="index">
-                    <span itemprop="name">code</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>lisp中的lambda表达式，显然和python中的很相似。<br>参照《实用common lisp编程》：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">;按照 min max, 步长step为参数的fn计算的长度输出 *</span><br><span class="line">(defun plot (fn min max step)</span><br><span class="line">  (loop for i from min to max by step do</span><br><span class="line">        (loop repeat (funcall fn i) do (format t &quot;*&quot;))</span><br><span class="line">        (format t &quot;~%&quot;)))</span><br><span class="line"></span><br><span class="line">(plot #&apos;exp 0 4 1/2);</span><br><span class="line">(plot #&apos;(lambda (x) (* 2 x)) 0 10 1);</span><br></pre></td></tr></table></figure></p>
-<p>输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">*</span><br><span class="line">**</span><br><span class="line">***</span><br><span class="line">*****</span><br><span class="line">********</span><br><span class="line">*************</span><br><span class="line">*********************</span><br><span class="line">**********************************</span><br><span class="line">*******************************************************</span><br><span class="line"></span><br><span class="line">**</span><br><span class="line">****</span><br><span class="line">******</span><br><span class="line">********</span><br><span class="line">**********</span><br><span class="line">************</span><br><span class="line">**************</span><br><span class="line">****************</span><br><span class="line">******************</span><br><span class="line">********************</span><br></pre></td></tr></table></figure></p>
-<p><code>#’</code>为lisp语言的语法糖，展开表示为<code>function</code>。后者将会把一个函数生成为一个函数对象，后者可以通过<code>funcall</code>调用。<br>interesting。</p>
-
-          
+          <p>lisp声明、使用变量的一种方法，是使用<code>let</code>语句。<br>形如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">;(let ((variable declare1) (variable declare2) (...))</span><br><span class="line">;  (varaible used here));</span><br><span class="line">(defun foo(x)</span><br><span class="line">  (format t &quot;Parameter: ~a~%&quot; x)</span><br><span class="line">  (let ((x 2))</span><br><span class="line">    (format t &quot;Outer LET: ~a~%&quot; x)</span><br><span class="line">    (let ((x 3))</span><br><span class="line">      (format t &quot;Inner LET: ~a~%&quot; x))</span><br><span class="line">    (format t &quot;Outer LET: ~a~%&quot; x))</span><br><span class="line">  (format t &quot;Parameter: ~a~%&quot; x));</span><br><span class="line"></span><br><span class="line">(foo 10);</span><br></pre></td></tr></table></figure></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/30/lisp-let变量声明/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1685,7 +1704,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1707,7 +1726,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

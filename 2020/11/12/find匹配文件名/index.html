@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="目录内容：1text  text.bak 希望从中找到text.bak。使用find实现。错误操作：123&amp;gt;find -name *.bak* .find: paths must precede expression: .Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path..">
+<meta name="description" content="目录内容：1text  text.bak 希望从中找到text.bak。使用find实现。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="find匹配文件名">
 <meta property="og:url" content="http://yoursite.com/2020/11/12/find匹配文件名/index.html">
 <meta property="og:site_name" content="李岩&#39;s Blog">
-<meta property="og:description" content="目录内容：1text  text.bak 希望从中找到text.bak。使用find实现。错误操作：123&amp;gt;find -name *.bak* .find: paths must precede expression: .Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path..">
+<meta property="og:description" content="目录内容：1text  text.bak 希望从中找到text.bak。使用find实现。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-12-09T13:59:23.580Z">
+<meta property="og:updated_time" content="2020-12-23T11:43:54.782Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="find匹配文件名">
-<meta name="twitter:description" content="目录内容：1text  text.bak 希望从中找到text.bak。使用find实现。错误操作：123&amp;gt;find -name *.bak* .find: paths must precede expression: .Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path..">
+<meta name="twitter:description" content="目录内容：1text  text.bak 希望从中找到text.bak。使用find实现。">
 
 
 
@@ -320,7 +320,7 @@
 
       
         <p>目录内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text  text.bak</span><br></pre></td></tr></table></figure></p>
-<p>希望从中找到<code>text.bak</code>。使用<code>find</code>实现。<br>错误操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;find -name *.bak* .</span><br><span class="line">find: paths must precede expression: .</span><br><span class="line">Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path...] [expression]</span><br></pre></td></tr></table></figure></p>
+<p>希望从中找到<code>text.bak</code>。使用<code>find</code>实现。<br><a id="more"></a><br>错误操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;find -name *.bak* .</span><br><span class="line">find: paths must precede expression: .</span><br><span class="line">Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path...] [expression]</span><br></pre></td></tr></table></figure></p>
 <p><code>-name</code>会作为<code>EXPRESSIONS</code>存在。<code>find</code>要求的参数位置为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find [-H] [-L] [-P] [-D debugopts] [-Olevel] [path...] [expression]</span><br></pre></td></tr></table></figure></p>
 <p>所以，正确格式为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">find . -name *.bak</span><br><span class="line">./text.bak</span><br></pre></td></tr></table></figure></p>
 <p>关于正则中<code>.</code>会作为通配符，如需匹配<code>text.bak</code>需要对<code>.</code>进行转义的情况，也需要关注下。本例中就不涉及了。</p>
@@ -434,7 +434,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -456,7 +456,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

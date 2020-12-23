@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="最近研究了一下pluma的使用。发现官网上的简单示例对于刚入门的人来说还是麻烦了些（而且还有语法错误）。下面重新整理了一个例子，作为备注。   其中，device为一个虚基类，作为接口类存在。keyboard及screen作为实现了device的子类存在，实现具体的操作。在pluma上注册后，在main中调用接口，实现keyboard及screen的调用。12345678910111213// d">
+<meta name="description" content="最近研究了一下pluma的使用。发现官网上的简单示例对于刚入门的人来说还是麻烦了些（而且还有语法错误）。下面重新整理了一个例子，作为备注。">
 <meta name="keywords" content="c++,pluma">
 <meta property="og:type" content="article">
 <meta property="og:title" content="c++插件管理--pluma&lt;实践&gt;">
 <meta property="og:url" content="http://yoursite.com/2020/10/29/c-插件管理-pluma/index.html">
 <meta property="og:site_name" content="李岩&#39;s Blog">
-<meta property="og:description" content="最近研究了一下pluma的使用。发现官网上的简单示例对于刚入门的人来说还是麻烦了些（而且还有语法错误）。下面重新整理了一个例子，作为备注。   其中，device为一个虚基类，作为接口类存在。keyboard及screen作为实现了device的子类存在，实现具体的操作。在pluma上注册后，在main中调用接口，实现keyboard及screen的调用。12345678910111213// d">
+<meta property="og:description" content="最近研究了一下pluma的使用。发现官网上的简单示例对于刚入门的人来说还是麻烦了些（而且还有语法错误）。下面重新整理了一个例子，作为备注。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-12-09T13:59:23.579Z">
+<meta property="og:updated_time" content="2020-12-23T11:40:45.288Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c++插件管理--pluma&lt;实践&gt;">
-<meta name="twitter:description" content="最近研究了一下pluma的使用。发现官网上的简单示例对于刚入门的人来说还是麻烦了些（而且还有语法错误）。下面重新整理了一个例子，作为备注。   其中，device为一个虚基类，作为接口类存在。keyboard及screen作为实现了device的子类存在，实现具体的操作。在pluma上注册后，在main中调用接口，实现keyboard及screen的调用。12345678910111213// d">
+<meta name="twitter:description" content="最近研究了一下pluma的使用。发现官网上的简单示例对于刚入门的人来说还是麻烦了些（而且还有语法错误）。下面重新整理了一个例子，作为备注。">
 
 
 
@@ -342,7 +342,7 @@
       
 
       
-        <p>最近研究了一下<a href="http://pluma-framework.sourceforge.net/" target="_blank" rel="noopener">pluma</a>的使用。发现官网上的简单示例对于刚入门的人来说还是麻烦了些（而且还有语法错误）。<br>下面重新整理了一个例子，作为备注。  </p>
+        <p>最近研究了一下<a href="http://pluma-framework.sourceforge.net/" target="_blank" rel="noopener">pluma</a>的使用。发现官网上的简单示例对于刚入门的人来说还是麻烦了些（而且还有语法错误）。<br>下面重新整理了一个例子，作为备注。<br><a id="more"></a></p>
 <p>其中，<code>device</code>为一个虚基类，作为接口类存在。<code>keyboard</code>及<code>screen</code>作为实现了device的子类存在，实现具体的操作。在pluma上注册后，在<code>main</code>中调用接口，实现<code>keyboard</code>及<code>screen</code>的调用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// device.hpp</span><br><span class="line">#ifndef _DEVICE_HPP_</span><br><span class="line">#define _DEVICE_HPP_</span><br><span class="line">#include &quot;Pluma/Pluma.hpp&quot;</span><br><span class="line"></span><br><span class="line">class Device&#123;</span><br><span class="line">public:</span><br><span class="line">    virtual std::string getDescription() const=0;</span><br><span class="line">&#125;;</span><br><span class="line">// create DevicedProvider class</span><br><span class="line">PLUMA_PROVIDER_HEADER(Device);</span><br><span class="line"></span><br><span class="line">#endif</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// device.cpp</span><br><span class="line">#include &quot;device.hpp&quot;</span><br><span class="line">PLUMA_PROVIDER_SOURCE(Device, 6, 3);</span><br></pre></td></tr></table></figure>
 <p>如上所示，是<code>device</code>的定义。其中<code>PLUMA_PROVIDER_HEADER</code>和<code>PLUMA_PROVIDER_SOURCE</code><code>pluma</code>提供的宏。功能暂且不论。我们继续往下看。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// screen.hpp</span><br><span class="line">#include &quot;Pluma/Pluma.hpp&quot;</span><br><span class="line">#include &quot;device.hpp&quot;</span><br><span class="line"></span><br><span class="line">class Screen: public Device&#123;</span><br><span class="line">public:</span><br><span class="line">    std:: string getDescription() const&#123;</span><br><span class="line">        return &quot;screen&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">PLUMA_INHERIT_PROVIDER(Screen, Device);</span><br></pre></td></tr></table></figure></p>
@@ -471,7 +471,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -493,7 +493,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

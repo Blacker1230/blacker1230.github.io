@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="目前，lisp的开发环境基本上被lispbox所垄断。所以本文来说一CLISP，C语言实现的LISP解释器的安装。12345wget &amp;quot;https://ftp.gnu.org/pub/gnu/clisp/latest/clisp-2.49.tar.gz&amp;quot;tar -xvf clisp-2.49.tar.gzcd clisp-2.49./configure --prefix=LOC">
+<meta name="description" content="目前，lisp的开发环境基本上被lispbox所垄断。所以本文来说一CLISP，C语言实现的LISP解释器的安装。">
 <meta name="keywords" content="lisp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="clisp编译">
 <meta property="og:url" content="http://yoursite.com/2019/05/28/clisp编译/index.html">
 <meta property="og:site_name" content="李岩&#39;s Blog">
-<meta property="og:description" content="目前，lisp的开发环境基本上被lispbox所垄断。所以本文来说一CLISP，C语言实现的LISP解释器的安装。12345wget &amp;quot;https://ftp.gnu.org/pub/gnu/clisp/latest/clisp-2.49.tar.gz&amp;quot;tar -xvf clisp-2.49.tar.gzcd clisp-2.49./configure --prefix=LOC">
+<meta property="og:description" content="目前，lisp的开发环境基本上被lispbox所垄断。所以本文来说一CLISP，C语言实现的LISP解释器的安装。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-12-09T13:59:23.580Z">
+<meta property="og:updated_time" content="2020-12-23T11:42:20.698Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="clisp编译">
-<meta name="twitter:description" content="目前，lisp的开发环境基本上被lispbox所垄断。所以本文来说一CLISP，C语言实现的LISP解释器的安装。12345wget &amp;quot;https://ftp.gnu.org/pub/gnu/clisp/latest/clisp-2.49.tar.gz&amp;quot;tar -xvf clisp-2.49.tar.gzcd clisp-2.49./configure --prefix=LOC">
+<meta name="twitter:description" content="目前，lisp的开发环境基本上被lispbox所垄断。所以本文来说一CLISP，C语言实现的LISP解释器的安装。">
 
 
 
@@ -342,7 +342,7 @@
       
 
       
-        <p>目前，lisp的开发环境基本上被<a href="https://common-lisp.net/project/lispbox/" target="_blank" rel="noopener">lispbox</a>所垄断。所以本文来说一<a href="https://clisp.sourceforge.io/" target="_blank" rel="noopener">CLISP</a>，C语言实现的LISP解释器的安装。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget &quot;https://ftp.gnu.org/pub/gnu/clisp/latest/clisp-2.49.tar.gz&quot;</span><br><span class="line">tar -xvf clisp-2.49.tar.gz</span><br><span class="line">cd clisp-2.49</span><br><span class="line">./configure --prefix=LOCAL_PATH --ignore-absence-of-libsigsegv</span><br><span class="line">cd src &amp;&amp; make &amp;&amp; make install</span><br></pre></td></tr></table></figure></p>
+        <p>目前，lisp的开发环境基本上被<a href="https://common-lisp.net/project/lispbox/" target="_blank" rel="noopener">lispbox</a>所垄断。所以本文来说一<a href="https://clisp.sourceforge.io/" target="_blank" rel="noopener">CLISP</a>，C语言实现的LISP解释器的安装。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget &quot;https://ftp.gnu.org/pub/gnu/clisp/latest/clisp-2.49.tar.gz&quot;</span><br><span class="line">tar -xvf clisp-2.49.tar.gz</span><br><span class="line">cd clisp-2.49</span><br><span class="line">./configure --prefix=LOCAL_PATH --ignore-absence-of-libsigsegv</span><br><span class="line">cd src &amp;&amp; make &amp;&amp; make install</span><br></pre></td></tr></table></figure></p>
 <p>这样就可以将CLISP安装到<code>–prefix</code>指定的路径。<br>然后是使用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd LOCAL_PATH/bin/</span><br><span class="line">./clisp</span><br></pre></td></tr></table></figure></p>
 <p>就会出现欢迎界面：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo</span><br><span class="line">  I I I I I I I      8     8   8           8     8     o  8    8</span><br><span class="line">  I  \ `+&apos; /  I      8         8           8     8        8    8</span><br><span class="line">   \  `-+-&apos;  /       8         8           8      ooooo   8oooo</span><br><span class="line">    `-__|__-&apos;        8         8           8           8  8</span><br><span class="line">        |            8     o   8           8     o     8  8</span><br><span class="line">  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8</span><br><span class="line"></span><br><span class="line">Welcome to GNU CLISP 2.49 (2010-07-07) &lt;http://clisp.cons.org/&gt;</span><br><span class="line"></span><br><span class="line">Copyright (c) Bruno Haible, Michael Stoll 1992, 1993</span><br><span class="line">Copyright (c) Bruno Haible, Marcus Daniels 1994-1997</span><br><span class="line">Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998</span><br><span class="line">Copyright (c) Bruno Haible, Sam Steingold 1999-2000</span><br><span class="line">Copyright (c) Sam Steingold, Bruno Haible 2001-2010</span><br><span class="line"></span><br><span class="line">Type :h and hit Enter for context help.</span><br><span class="line">[1]&gt;</span><br></pre></td></tr></table></figure></p>
 <p>尝试进行函数求值：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[1]&gt; (defun sum(x y) (format t &quot;~d&quot; (+ x y)))</span><br><span class="line">SUM</span><br><span class="line">[2]&gt; (sum 1 2)</span><br><span class="line">3</span><br><span class="line">NIL</span><br><span class="line">[3]&gt; (exit)</span><br><span class="line">Bye.</span><br></pre></td></tr></table></figure></p>
@@ -464,7 +464,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -486,7 +486,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

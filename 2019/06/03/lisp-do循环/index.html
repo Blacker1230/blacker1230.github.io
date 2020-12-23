@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="lisp中，do循环形象如下:123(do (variable-definition*)    (end-test-form result-form*)    statement*); 其中，(variable-definition*)是一些行日(var init next)的赋值结构。在do开始时，var会被赋值为init。并且在一次循环结束后，var会被赋值为next所表示的内容。形如：123">
+<meta name="description" content="lisp中，do循环形象如下:123(do (variable-definition*)    (end-test-form result-form*)    statement*);">
 <meta name="keywords" content="lisp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="lisp-do循环">
 <meta property="og:url" content="http://yoursite.com/2019/06/03/lisp-do循环/index.html">
 <meta property="og:site_name" content="李岩&#39;s Blog">
-<meta property="og:description" content="lisp中，do循环形象如下:123(do (variable-definition*)    (end-test-form result-form*)    statement*); 其中，(variable-definition*)是一些行日(var init next)的赋值结构。在do开始时，var会被赋值为init。并且在一次循环结束后，var会被赋值为next所表示的内容。形如：123">
+<meta property="og:description" content="lisp中，do循环形象如下:123(do (variable-definition*)    (end-test-form result-form*)    statement*);">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-12-09T13:59:23.580Z">
+<meta property="og:updated_time" content="2020-12-23T11:41:33.460Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lisp-do循环">
-<meta name="twitter:description" content="lisp中，do循环形象如下:123(do (variable-definition*)    (end-test-form result-form*)    statement*); 其中，(variable-definition*)是一些行日(var init next)的赋值结构。在do开始时，var会被赋值为init。并且在一次循环结束后，var会被赋值为next所表示的内容。形如：123">
+<meta name="twitter:description" content="lisp中，do循环形象如下:123(do (variable-definition*)    (end-test-form result-form*)    statement*);">
 
 
 
@@ -343,6 +343,7 @@
 
       
         <p>lisp中，do循环形象如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(do (variable-definition*)</span><br><span class="line">    (end-test-form result-form*)</span><br><span class="line">    statement*);</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <p>其中，<code>(variable-definition*)</code>是一些行日<code>(var init next)</code>的赋值结构。在<code>do</code>开始时，<code>var</code>会被赋值为<code>init</code>。并且在一次循环结束后，<code>var</code>会被赋值为<code>next</code>所表示的内容。<br>形如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(do ((n 0 (+ 1 n))</span><br><span class="line">     (cur 0 next)</span><br><span class="line">     (next 1 (+ cur next)))</span><br><span class="line">    ((= 10 n) (format t &quot;|end ~d&quot; cur))</span><br><span class="line">  (format t &quot;~d|&quot; cur));</span><br></pre></td></tr></table></figure></p>
 <p>输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0|1|1|2|3|5|8|13|21|34||end 55</span><br></pre></td></tr></table></figure></p>
 <p>类似于python中的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cur = 0</span><br><span class="line">next = 1</span><br><span class="line">for i in range(10):</span><br><span class="line">    print(&quot;%d|&quot; % cur)</span><br><span class="line">    cur, next = next, cur + next</span><br><span class="line">print(&quot;|end %d&quot; % cur)</span><br></pre></td></tr></table></figure></p>
@@ -462,7 +463,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -484,7 +485,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
