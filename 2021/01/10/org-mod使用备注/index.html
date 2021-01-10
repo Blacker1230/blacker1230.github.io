@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="mac,">
+  <meta name="keywords" content="emacs,org-mode,日程管理,入门,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="最近开始使用Mac了。在使用过程中，发现了一些Mac OS和Centos体验上不同的地方。在这里做一下备注。  部分Linux指令缺失Mac OS并没有实现所有的Linux下的指令，如realpath这里就需要单独安装一些扩展包了：  brew install coreutils">
-<meta name="keywords" content="mac">
+<meta name="description" content="为了更好的live in emacs，一款合适的日程管理工具总是需要的。在挣扎了若干次后，最终还是把org-mode这一优秀的日程管理工具捡起来了。本文简单记录下使用的方法。  org-mode介绍在神的编辑器emacs的传说中，往往有org-mode的身影。虽然按照(org官网)orgmode官网的描述，org-mode并不仅限于在emacs中使用，如开始使用 Org 模式吧，在没有 Emac">
+<meta name="keywords" content="emacs,org-mode,日程管理,入门">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mac使用备注">
-<meta property="og:url" content="http://yoursite.com/2020/12/10/Mac使用备注/index.html">
+<meta property="og:title" content="emacs! start org-mode! --org-mod使用备注">
+<meta property="og:url" content="http://yoursite.com/2021/01/10/org-mod使用备注/index.html">
 <meta property="og:site_name" content="李岩&#39;s Blog">
-<meta property="og:description" content="最近开始使用Mac了。在使用过程中，发现了一些Mac OS和Centos体验上不同的地方。在这里做一下备注。  部分Linux指令缺失Mac OS并没有实现所有的Linux下的指令，如realpath这里就需要单独安装一些扩展包了：  brew install coreutils">
+<meta property="og:description" content="为了更好的live in emacs，一款合适的日程管理工具总是需要的。在挣扎了若干次后，最终还是把org-mode这一优秀的日程管理工具捡起来了。本文简单记录下使用的方法。  org-mode介绍在神的编辑器emacs的传说中，往往有org-mode的身影。虽然按照(org官网)orgmode官网的描述，org-mode并不仅限于在emacs中使用，如开始使用 Org 模式吧，在没有 Emac">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-12-23T11:39:26.482Z">
+<meta property="og:updated_time" content="2021-01-10T13:39:54.648Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mac使用备注">
-<meta name="twitter:description" content="最近开始使用Mac了。在使用过程中，发现了一些Mac OS和Centos体验上不同的地方。在这里做一下备注。  部分Linux指令缺失Mac OS并没有实现所有的Linux下的指令，如realpath这里就需要单独安装一些扩展包了：  brew install coreutils">
+<meta name="twitter:title" content="emacs! start org-mode! --org-mod使用备注">
+<meta name="twitter:description" content="为了更好的live in emacs，一款合适的日程管理工具总是需要的。在挣扎了若干次后，最终还是把org-mode这一优秀的日程管理工具捡起来了。本文简单记录下使用的方法。  org-mode介绍在神的编辑器emacs的传说中，往往有org-mode的身影。虽然按照(org官网)orgmode官网的描述，org-mode并不仅限于在emacs中使用，如开始使用 Org 模式吧，在没有 Emac">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/12/10/Mac使用备注/">
+  <link rel="canonical" href="http://yoursite.com/2021/01/10/org-mod使用备注/">
 
 
 
 
 
-  <title>Mac使用备注 | 李岩's Blog</title>
+  <title>emacs! start org-mode! --org-mod使用备注 | 李岩's Blog</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/12/10/Mac使用备注/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/01/10/org-mod使用备注/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="李岩">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Mac使用备注</h1>
+          <h1 class="post-title" itemprop="name headline">emacs! start org-mode! --org-mod使用备注</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-12-10T19:40:00+08:00">
-                2020-12-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-10T20:30:00+08:00">
+                2021-01-10
               </time>
             
 
@@ -307,6 +307,17 @@
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/code/" itemprop="url" rel="index">
                     <span itemprop="name">code</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/code/life/" itemprop="url" rel="index">
+                    <span itemprop="name">life</span>
                   </a>
                 </span>
 
@@ -343,25 +354,111 @@
 
       
         <blockquote>
-<p>最近开始使用Mac了。在使用过程中，发现了一些<code>Mac OS</code>和<code>Centos</code>体验上不同的地方。在这里做一下备注。</p>
+<p>为了更好的<code>live in emacs</code>，一款合适的日程管理工具总是需要的。在挣扎了若干次后，最终还是把<code>org-mode</code>这一优秀的日程管理工具捡起来了。本文简单记录下使用的方法。</p>
 </blockquote>
-<h3 id="部分Linux指令缺失"><a href="#部分Linux指令缺失" class="headerlink" title="部分Linux指令缺失"></a>部分Linux指令缺失</h3><p><code>Mac OS</code>并没有实现所有的<code>Linux</code>下的指令，如<code>realpath</code>这里就需要单独安装一些扩展包了：</p>
-<blockquote>
-<p>brew install coreutils<br><a id="more"></a></p>
-</blockquote>
-<h3 id="终端Basic颜色不友好"><a href="#终端Basic颜色不友好" class="headerlink" title="终端Basic颜色不友好"></a>终端Basic颜色不友好</h3><p>可以单独下载一些配色方案。从尽量使用原生配色的角度来说，只需要在<code>.bashrc</code>下面作如下配置即可：</p>
-<blockquote>
-<p># for color<br>export CLICOLOR=1<br># grep<br>alias grep=’grep –color=always’</p>
-</blockquote>
-<p>此外，配合<code>.vimrc</code>中配色变更食用更佳：</p>
-<blockquote>
-<p>“ 设置搜索高亮<br>set hlsearch<br>“ 设置语法高亮<br>syntax on </p>
-</blockquote>
-<h3 id="启动shell配置不同"><a href="#启动shell配置不同" class="headerlink" title="启动shell配置不同"></a>启动shell配置不同</h3><p><code>Mac OS</code>默认使用<code>zsh</code>作为登陆<code>shell</code>。所以设置<code>.bashrc</code>作为启动配置时，需要在<code>~/.zshrc</code>中进行配置：</p>
-<blockquote>
-<p>[ -f ~/.bashrc ] &amp;&amp; source ~/.bashrc</p>
-</blockquote>
-<p>后面碰到再补充吧。</p>
+<h1 id="org-mode介绍"><a href="#org-mode介绍" class="headerlink" title="org-mode介绍"></a>org-mode介绍</h1><p>在<code>神的编辑器emacs</code>的传说中，往往有<code>org-mode</code>的身影。虽然按照(org官网)<a href="https://orgmode.org/" target="_blank" rel="noopener">orgmode</a>官网的描述，<code>org-mode</code>并不仅限于在<code>emacs</code>中使用，如<a href="https://zhuanlan.zhihu.com/p/57800574" target="_blank" rel="noopener">开始使用 Org 模式吧，在没有 Emacs 的情况下</a>这篇文章就详细讲解了在<code>vscode</code>中使用<code>org-mode</code>的方式，但是配合<code>emacs</code>的万物皆系于<code>kbd</code>之上的使用习惯，<code>org-mode</code>确实能够发挥最大的功能。<br><code>org-mode</code>的基本功能包括设置待办事项、设置待办的标签、查看日历、查看某一天的待办及进度。基本上，满足了对优秀日程管理工具的所有想象。<br><a id="more"></a><br>这里贴一下<a href="https://wizardforcel.gitbooks.io/os-world-trip/content/42.html" target="_blank" rel="noopener">开源世界旅行手册</a>中涉及的<code>org-mode</code>与<code>oneNote</code>的对比，能够更加直观的了解<code>org-mode</code>的功能：</p>
+<table>
+<thead>
+<tr>
+<th>org-mode vs oneNote</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Org-mode</td>
+<td>OneNote</td>
+</tr>
+<tr>
+<td>标签</td>
+<td>强大</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>日程表</td>
+<td>强大</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>界面</td>
+<td>字符</td>
+<td>漂亮</td>
+</tr>
+<tr>
+<td>TablePC</td>
+<td>不支持</td>
+<td>非常好</td>
+</tr>
+<tr>
+<td>摘录</td>
+<td>保持源格式</td>
+</tr>
+<tr>
+<td>便捷</td>
+<td>Emacs 内置</td>
+<td>安装麻烦</td>
+</tr>
+</tbody>
+</table>
+<h1 id="基本使用流程"><a href="#基本使用流程" class="headerlink" title="基本使用流程"></a>基本使用流程</h1><p>目前还处于探索阶段了，简单描述下<code>org-mode</code>的配置流程。</p>
+<ol start="0">
+<li>版本<br>使用的是<code>emacs-27.1</code>版本，默认内置了<code>org-mode</code>(值得一提的是，当我在写一篇文章时，发现hexo#admin编辑器是支持部分<code>emacs</code>快捷键的，又反映了<code>emacs</code>影响之广)。</li>
+<li>设置<br><code>org-mode</code>在使用时，一般是在文本文档中编辑待办内容，将待办内容加入<code>org-mode</code>的日程表。而后通过<code>org-agenda</code>来查看指定日期的待办内容，并随着待办内容设置事务的进度。<br>使用前，如果是使用<code>emacs</code>进行编辑的话，可以在<code>emacs</code>配置文件中作如下设置：  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">;; 将.org结尾的文档，均以org-mode打开</span><br><span class="line">(add-to-list &apos;auto-mode-alist &apos;(&quot;\\.org\\&apos;&quot; . org-mode))</span><br><span class="line">;; 将org-agenda绑定为Ctrl-c a 快捷键</span><br><span class="line">(global-set-key (kbd &quot;C-c a&quot;) &apos;org-agenda)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>重新打开<code>emacs</code>使配置生效，重新载入<code>emacs</code>配置文件即可。<br>使用时，可以单独建立一个文件夹，来存储不同需求的日程文档（如，笔者在<code>~/.org/</code>目录下创建了<code>2021.org</code>,<code>learn.org</code>等多个文档）。以下是一个简单的待办文档内容（引用自<a href="https://wizardforcel.gitbooks.io/os-world-trip/content/42.html" target="_blank" rel="noopener">文章3</a>）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#+STARTUP: overview  </span><br><span class="line">#+TAGS: &#123; 桌面(d) 服务器(s) &#125;  编辑器(e) 浏览器(f) 多媒体(m) 压缩(z)</span><br><span class="line">#+TAGS:  &#123; @Windows(w)  @Linux(l) &#125;    </span><br><span class="line">#+TAGS:  &#123; 糟糕(1) 凑合(2) 不错(3) 很好(4) 极品(5) &#125;  </span><br><span class="line">#+SEQ_TODO: TODO(T) WAIT(W) | DONE(D!) CANCELED(C@)  </span><br><span class="line">#+COLUMNS: %10ITEM  %10PRIORITY %15TODO %65TAGS  </span><br><span class="line">* 工作  &lt;2021-01-10&gt;-&lt;2022-01-10&gt;</span><br><span class="line">** Emacs  &lt;2021-01-10 21:00 ++1d&gt;</span><br><span class="line">   神之编辑器  </span><br><span class="line">*** org-mode  </span><br><span class="line">    组织你的意念</span><br></pre></td></tr></table></figure></p>
+<p>（更多的内容可以查看下<a href="https://wizardforcel.gitbooks.io/os-world-trip/content/42.html" target="_blank" rel="noopener">原文</a>，本文仅简单介绍）<br>以<code>#+</code>开头的可以认为是本地设置内容。<code>#+TAGS:</code>后设置的内容，是本日程中预设的日程标签，标签<code>()</code>中的是该标签的缩写，需要保持唯一。在下面的日程（或者<code>标题</code>，可以很容易的看出来，和<code>markdown</code>是类似的语法）上使用快捷键<code>Ctrl-c Ctrl-c</code>(或者说，<code>C-c C-c</code>)，即可给日程打上标签。每个<code>{}</code>内的标签是互斥的，在设置时，可以注意下。<br>下面的日程中,<code>&lt;2021-01-10&gt;-&lt;2022-01-10&gt;</code>表示该事件时间范围为<code>2021-01-10</code>至<code>2022-01-10</code>结束。<code>&lt;2021-01-10 21:00 ++1d&gt;</code>表示这个子任务的时间开始于<code>2021-01-10 21:00</code>而后每天重复一次(++1w，++1m为周、月，以此类推)。<br>而后，保存文件。使用<code>Ctrl-c [</code>将当前日程文件纳入<code>org-mode</code>的日程表。使用前面配置的快捷键<code>C-c a</code>唤出日历，会出现如下提示：</p>
+<table>
+<thead>
+<tr>
+<th>Press key for an agenda command:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>本周事件</td>
+</tr>
+<tr>
+<td>t</td>
+<td>显示所有事件</td>
+</tr>
+<tr>
+<td>m</td>
+<td>查询标签</td>
+</tr>
+<tr>
+<td>L</td>
+<td>当前缓冲区时间线</td>
+</tr>
+<tr>
+<td>s</td>
+<td>查询关键词</td>
+</tr>
+<tr>
+<td>T</td>
+<td>查询带 TODO 关键词的项</td>
+</tr>
+<tr>
+<td>M</td>
+<td>查询带 TODO 关键词的标签</td>
+</tr>
+<tr>
+<td>#</td>
+<td>显示已停止事件</td>
+</tr>
+<tr>
+<td>q</td>
+<td>退出日程表</td>
+</tr>
+</tbody>
+</table>
+<p>选择<code>a</code>，可以查看本周的事件。如果已经到了所设置的事件区间，即可看到我们设置的事件内容。<br>以上算是简单的入门了。</p>
+<h1 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h1><ol>
+<li><a href="https://victor72.github.io/blog/2016/06/20/with-org-page-manage-lives/" target="_blank" rel="noopener">使用org-mode 管理日常事务- 日知录</a>  </li>
+<li><a href="https://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html" target="_blank" rel="noopener">用Org-mode实现GTD</a>  </li>
+<li><a href="https://wizardforcel.gitbooks.io/os-world-trip/content/42.html" target="_blank" rel="noopener">组织你的意念：Emacs org mode</a>.</li>
+</ol>
 
       
     </div>
@@ -379,7 +476,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mac/" rel="tag"># mac</a>
+            <a href="/tags/emacs/" rel="tag"># emacs</a>
+          
+            <a href="/tags/org-mode/" rel="tag"># org-mode</a>
+          
+            <a href="/tags/日程管理/" rel="tag"># 日程管理</a>
+          
+            <a href="/tags/入门/" rel="tag"># 入门</a>
           
         </div>
       
@@ -392,8 +495,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/12/09/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2020/12/23/elscreen标签背景颜色/" rel="next" title="elscreen标签背景颜色">
+                <i class="fa fa-chevron-left"></i> elscreen标签背景颜色
               </a>
             
           </div>
@@ -401,10 +504,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/12/23/elscreen标签背景颜色/" rel="prev" title="elscreen标签背景颜色">
-                elscreen标签背景颜色 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -542,7 +641,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#部分Linux指令缺失"><span class="nav-number">1.</span> <span class="nav-text">部分Linux指令缺失</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#终端Basic颜色不友好"><span class="nav-number">2.</span> <span class="nav-text">终端Basic颜色不友好</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动shell配置不同"><span class="nav-number">3.</span> <span class="nav-text">启动shell配置不同</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#org-mode介绍"><span class="nav-number">1.</span> <span class="nav-text">org-mode介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本使用流程"><span class="nav-number">2.</span> <span class="nav-text">基本使用流程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#相关文章"><span class="nav-number">3.</span> <span class="nav-text">相关文章</span></a></li></ol></div>
             
 
           </div>
