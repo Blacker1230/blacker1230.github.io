@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="something to eat, something to read and someone to love">
+<meta name="description" content="look, listen and say">
 <meta property="og:type" content="website">
 <meta property="og:title" content="李岩&#39;s Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="李岩&#39;s Blog">
-<meta property="og:description" content="something to eat, something to read and someone to love">
+<meta property="og:description" content="look, listen and say">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="李岩&#39;s Blog">
-<meta name="twitter:description" content="something to eat, something to read and someone to love">
+<meta name="twitter:description" content="look, listen and say">
 
 
 
@@ -252,6 +252,323 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/04/15/golang-GMP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李岩">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/walk.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李岩's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/04/15/golang-GMP/" itemprop="url">golang GMP</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-15T21:39:29+08:00">
+                2021-04-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  519字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>写点东西还是难，果然还是搬运工来的轻松些。今天搬运点Golang的<code>GMP</code>模型看看。最近在准备一篇<code>Golang</code>的<code>GC</code>实践。慢慢搞吧。</p>
+</blockquote>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><code>Golang</code>作为语言层面支持并发的语言，使用<code>go</code>可以让搬砖体验飞起。但是从直觉来说，事情并没有这么简单：从操作系统层面来说，进程和线程是操作系统认可的并行机制。协程以及<code>Golang</code>的所谓<em>纤程</em>是期望一堆程序员期望将操作系统的工作拿过来，以满足一些优化的效果。所以诸如<code>Python</code>的协程以及<code>Golang</code>的纤程，总是能够对应到操作系统认可的执行单元上。对于<code>Python</code>的协程还好理解一些，是严格运行在自己的线程里的，只是语言层面实现了线程内的上下文切换优化。所以对于<code>CPU</code>密集型的操作，仅使用协程是无法达到优化效果的：这种场景下<code>Python</code>会推荐多进程。相比起来，<code>Golang</code>的<code>go</code>野心更大一些：期望给用户以<code>go</code>作为接口，在语言内实现与操作系统调度单元的交互。<code>Golang</code>里实际的调度模型是<code>GMP</code>。<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/04/15/golang-GMP/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/04/08/golang-继承/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李岩">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/walk.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李岩's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/04/08/golang-继承/" itemprop="url">golang 封装</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-08T21:16:00+08:00">
+                2021-04-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  515字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>golang作为一种高级语言，实现了面向对象语言的封装、继承、多态的特性。本文简要介绍下golang面向对象的这些特性。</p>
+</blockquote>
+<h1 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h1><h2 id="访问权限控制"><a href="#访问权限控制" class="headerlink" title="访问权限控制"></a>访问权限控制</h2><p><code>Golang</code>采用首字母大小写的方式控制访问权限。举个例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">// lib/pub.go</span><br><span class="line">package learn</span><br><span class="line"></span><br><span class="line">type A struct&#123;  // 定义对象</span><br><span class="line">    private int</span><br><span class="line">    Public  string</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func NewA(private int, public string) A&#123;</span><br><span class="line">    return A&#123;private: private, Public: public&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (a A) PrintInf()&#123; // 可通过a.PrintInf() 访问该函数</span><br><span class="line">	print(a.private, a.Public)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var (</span><br><span class="line">    private = 1</span><br><span class="line">    Public = &quot;aa&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">// main.go</span><br><span class="line">package main</span><br><span class="line">import (</span><br><span class="line">    &quot;go_learn/lib&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">func main()&#123;</span><br><span class="line">    a := learn.NewA(1, &quot;aa&quot;)</span><br><span class="line">    print(a.Public, a.private) // a.private不可包外访问，编译报错</span><br><span class="line"></span><br><span class="line">    print(learn.private, learn.Public) // learn.private不可包外访问，编译报错</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>和 <code>C++/Java/Python</code>等常见的面向对象语言不同，<code>Golang</code>的结构体中不支持函数的定义。某个结构体的函数，可以通过函数名前的归属生命来表示。</p>
+<h2 id="访问结构体私有成员"><a href="#访问结构体私有成员" class="headerlink" title="访问结构体私有成员"></a>访问结构体私有成员</h2><p>这是个很有意思的话题。<code>C++</code>和<code>Python</code>都是有方法可以越过结构体的访问限制的，<code>Golang</code>通过<code>unsafe.Pointer</code>类型的转换也可以达到相同的目的。举个例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">// learn/pub.go</span><br><span class="line">package learn</span><br><span class="line"></span><br><span class="line">type A struct&#123;</span><br><span class="line">    private int</span><br><span class="line">    Public  string</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (a A) PrintInf()&#123;</span><br><span class="line">    print(a.private, a.Public)</span><br><span class="line">    return</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func NewA(private int, public string) A&#123;</span><br><span class="line">    return A&#123;private: private, Public: public&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var (</span><br><span class="line">    private = 1</span><br><span class="line">    Public = &quot;aa&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">// main.go</span><br><span class="line">/* 测试golang封装、继承、多态特性</span><br><span class="line"> */</span><br><span class="line">package main</span><br><span class="line">import (</span><br><span class="line">    &quot;unsafe&quot;</span><br><span class="line"></span><br><span class="line">    &quot;go_learn/lib&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">type AA struct&#123;</span><br><span class="line">    Private int</span><br><span class="line">    Public  string</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main()&#123;</span><br><span class="line">    a := learn.NewA(1, &quot;aa&quot;)</span><br><span class="line">    //print(a.Public, a.private)</span><br><span class="line"></span><br><span class="line">    //print(learn.Public, learn.private)</span><br><span class="line">    p := unsafe.Pointer(&amp;a)</span><br><span class="line">    aa := &amp;AA&#123;&#125;</span><br><span class="line">    aa = (*AA)(p) // golang unsafe.Pointer 更加接近 C/C++中指针的用法，编译器进行的校验较少；</span><br><span class="line">    print(aa.Private, aa.Public) // 可以正常运行。</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>简单备注了下<code>Golang</code>封装的特性。后续再备注下继承、多态的使用吧。由于<code>Golang</code>采用鸭子式的继承检查思想，继承和多态的特性使用会相对较繁琐。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/07/ratelimit服务流量限制/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -283,7 +600,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-07T17:30:41+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-07T17:30:00+08:00">
                 2021-02-07
               </time>
             
@@ -293,6 +610,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/code/" itemprop="url" rel="index">
+                    <span itemprop="name">code</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -315,7 +654,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  字
+                  1.4k字
                 </span>
               
 
@@ -331,7 +670,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  分钟
+                  5分钟
                 </span>
               
             </div>
@@ -353,12 +692,22 @@
 
       
         
-          
-            <blockquote>
-<p>在日常的工作中，固定QPS或者固定并发数是常用的两个。相对于固定并发数而言，固定QPS一般是</p>
+          <blockquote>
+<p>在日常的工作中，固定QPS或者固定并发数是常用的两个衡量系统容量时采用的流量控制手段。本文以<a href="https://chai2010.cn/advanced-go-programming-book/" target="_blank" rel="noopener">Go语言高级编程</a> 服务流量限制的内容为开端，对服务流量限制进行展开描述，同时对<code>Jmeter</code>及<code>golang ratelimit</code>中的流量限制方法进行描述。</p>
 </blockquote>
-
-          
+<ol>
+<li>起因</li>
+<li>漏桶法</li>
+<li>令牌桶法</li>
+<li>Jmeter中流量吞吐控制</li>
+<li>golang ratelimit</li></ol>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/02/07/ratelimit服务流量限制/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -501,7 +850,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  字
+                  109字
                 </span>
               
 
@@ -517,7 +866,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  分钟
+                  1分钟
                 </span>
               
             </div>
@@ -734,7 +1083,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  字
+                  1.2k字
                 </span>
               
 
@@ -750,7 +1099,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  分钟
+                  4分钟
                 </span>
               
             </div>
@@ -914,7 +1263,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  字
+                  270字
                 </span>
               
 
@@ -930,7 +1279,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  分钟
+                  1分钟
                 </span>
               
             </div>
@@ -1094,7 +1443,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  字
+                  216字
                 </span>
               
 
@@ -1110,7 +1459,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  分钟
+                  1分钟
                 </span>
               
             </div>
@@ -1254,7 +1603,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  字
+                  73字
                 </span>
               
 
@@ -1270,7 +1619,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  分钟
+                  1分钟
                 </span>
               
             </div>
@@ -1413,7 +1762,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  字
+                  127字
                 </span>
               
 
@@ -1429,7 +1778,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  分钟
+                  1分钟
                 </span>
               
             </div>
@@ -1569,7 +1918,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  字
+                  398字
                 </span>
               
 
@@ -1585,7 +1934,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  分钟
+                  1分钟
                 </span>
               
             </div>
@@ -1615,361 +1964,6 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2020/11/12/sed使用备注/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/10/29/c-插件管理-pluma/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李岩">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/walk.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="李岩's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/10/29/c-插件管理-pluma/" itemprop="url">c++插件管理--pluma<实践></实践></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-29T21:19:00+08:00">
-                2020-10-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/code/" itemprop="url" rel="index">
-                    <span itemprop="name">code</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>最近研究了一下<a href="http://pluma-framework.sourceforge.net/" target="_blank" rel="noopener">pluma</a>的使用。发现官网上的简单示例对于刚入门的人来说还是麻烦了些（而且还有语法错误）。<br>下面重新整理了一个例子，作为备注。<br></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/10/29/c-插件管理-pluma/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/17/python调试方法（其一）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李岩">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/walk.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="李岩's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/17/python调试方法（其一）/" itemprop="url">python调试方法（其一）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-17T22:51:00+08:00">
-                2019-07-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/code/" itemprop="url" rel="index">
-                    <span itemprop="name">code</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>&lt;一&gt; 这里记录一些python调试的方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># coding=UTF-8</span><br><span class="line">&apos;&apos;&apos; python debug method 1</span><br><span class="line">use print function to get output informatino</span><br><span class="line">&apos;&apos;&apos;</span><br><span class="line">DEBUG = True</span><br><span class="line"></span><br><span class="line">def _debug_(*args, **kwds):</span><br><span class="line">	&apos;&apos;&apos; depends on DEBUG value, print some function &apos;&apos;&apos;</span><br><span class="line">    global DEBUG</span><br><span class="line">    if DEBUG:</span><br><span class="line">    	print(args, kwds)</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">	_debug_(&quot;this is a test&quot;)</span><br></pre></td></tr></table></figure></p>
-<p>最常见的调试方法了。<code>print</code>可以依据需求调整为其他的方式（<code>logging</code>输出日志或者直接输出到文件中均可）。<br></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/07/17/python调试方法（其一）/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -2049,7 +2043,7 @@
               <img class="site-author-image" itemprop="image" src="/images/walk.jpg" alt="李岩">
             
               <p class="site-author-name" itemprop="name">李岩</p>
-              <p class="site-description motion-element" itemprop="description">something to eat, something to read and someone to love</p>
+              <p class="site-description motion-element" itemprop="description">look, listen and say</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -2059,7 +2053,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2081,7 +2075,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
